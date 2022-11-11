@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-image: url(../images/bg-pattern.svg);
+  background-repeat: no-repeat;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+}
+
+.top-part {
+  background-image: url(../images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 40px 25px;
+  margin-bottom: 15px;
+}
+.top-part h3 {
+  margin-top: 15px;
+  font-size: 15px;
+  color: hsl(226deg, 100%, 87%);
+}
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 5px hsl(223deg, 50%, 87%);
+  background: white;
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  padding: 25px 20px;
+}
+.price-section span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.price-section span p {
+  font-size: 0.9rem;
+  color: hsl(225deg, 20%, 60%);
+  margin: 30px 0;
+}
+.price-section h1 {
+  font-size: 1.5rem;
+  color: hsl(225deg, 20%, 60%);
+  margin: 30px 0;
+}
+.price-section .slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.price-section .scroller {
+  width: 100%;
+  height: 13px;
+  border-radius: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: hsl(223deg, 50%, 87%);
+  background-image: linear-gradient(hsl(174deg, 77%, 80%), hsl(174deg, 77%, 80%));
+  background-size: 60% 100%;
+  background-repeat: no-repeat;
+}
+.price-section .scroller::-webkit-slider-thumb {
+  box-shadow: 1px 10px 20px hsl(174deg, 77%, 80%);
+  width: 45px;
+  height: 45px;
+  background: hsl(174deg, 86%, 45%);
+  background-image: url(../images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.price-section .scroller::-webkit-slider-thumb:hover {
+  background-color: hsl(174deg, 77%, 70%);
+  cursor: pointer;
+}
+.price-section .scroller::-webkit-slider-thumb:active {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.price {
+  font-size: 2.4rem;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.price p {
+  font-size: 1rem;
+  color: hsl(225deg, 20%, 60%);
+}
+
+.bill-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.bill-section .monthly-billing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.bill-section .monthly-billing p {
+  font-size: 10px;
+  color: hsl(225deg, 20%, 60%);
+}
+.bill-section .monthly-billing .bar {
+  position: relative;
+  width: 45px;
+  height: 24px;
+  border-radius: 15px;
+  padding: 2px 3px;
+  margin-right: 5px;
+  background: hsl(223deg, 50%, 87%);
+}
+.bill-section .monthly-billing .bar:hover {
+  background-color: hsl(174deg, 86%, 45%);
+}
+.bill-section .monthly-billing .ball {
+  position: absolute;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+}
+.bill-section .monthly-billing .toggleBallPosition {
+  position: absolute;
+  left: 23px;
+}
+.bill-section .monthly-billing .background {
+  background-color: hsl(174deg, 86%, 45%);
+}
+.bill-section .yearly-billing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.bill-section .yearly-billing p {
+  font-size: 10px;
+  color: hsl(225deg, 20%, 60%);
+}
+.bill-section .percentage {
+  background: hsl(14deg, 92%, 95%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  width: 80px;
+  height: 20px;
+  margin-left: 5px;
+  border-radius: 30px;
+}
+.bill-section .percentage p {
+  color: hsl(15deg, 100%, 70%);
+  font-size: 10px;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 4px 10px 10px hsl(223deg, 50%, 87%);
+  margin-top: 2px;
+  padding: 30px;
+  width: 100%;
+  background: white;
+}
+.bottom-section .extra-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.bottom-section .extra-info p {
+  color: hsl(225deg, 20%, 60%);
+}
+.bottom-section .submit-btn {
+  width: 75%;
+  padding: 15px;
+  color: hsl(226deg, 100%, 87%);
+  background: hsl(227deg, 35%, 25%);
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.attribution {
+  text-align: center;
+  color: hsl(225deg, 20%, 60%);
+  font-size: 1.3rem;
+  margin-top: 40px;
+}
+.attribution a:link {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    width: 100%;
+  }
+  .price-section {
+    width: 480px;
+    height: 250px;
+    padding: 15px;
+    position: relative;
+  }
+  .price-section .scroller {
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  .price-section .views {
+    position: absolute;
+    left: 20px;
+    top: -10px;
+    margin-bottom: 70px;
+  }
+  .price-section span {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+  }
+  .price-section .bill-section {
+    gap: 10px;
+    margin-top: 10px;
+    margin-right: -40px;
+  }
+  .price-section .monthly-billing p {
+    font-size: 0.69rem;
+    border: 1px soild red;
+  }
+  .price-section .yearly-billing p {
+    font-size: 0.69rem;
+  }
+  .price-section .percentage p {
+    font-size: 0.69rem;
+  }
+  .price-section .discount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 95px;
+    height: 10px;
+  }
+  .bottom-section {
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .bottom-section .submit-btn {
+    width: 45%;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .information .extra-info {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+}/*# sourceMappingURL=main.css.map */

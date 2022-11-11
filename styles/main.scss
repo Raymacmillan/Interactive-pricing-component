@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+@import "variables";
+@import "functions";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Manrope', sans-serif;
+    background-image: url(../images/bg-pattern.svg);
+    background-repeat: no-repeat;
+}
+
+// mobile version...Mobile:375px
+
+.main-container {
+
+    min-height: 100vh;
+
+    @include flex(column);
+
+    padding: 20px 20px;
+}
+
+.top-part {
+    background-image: url(../images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include flex(column);
+
+    text-align: center;
+
+    width: 100%;
+    padding: 40px 25px;
+
+    margin-bottom: 15px;
+
+    h3 {
+        margin-top: 15px;
+
+        font-size: 15px;
+        color:  $ctaText;
+    }
+}
+
+.price-section {
+    @include flex(column);
+
+    box-shadow: 1px 1px 5px $toggleBackground;
+
+    background: $pricingComponentBackground;
+
+    border-radius: 10px 10px 0 0;
+
+    width: 100%;
+
+    padding: 25px 20px;
+
+    span {
+        @include flex(row);
+
+        gap: 5px;
+
+        p {
+            font-size: 0.9rem;
+
+            color: $text;
+    
+            margin: 30px 0;
+        }
+    }
+
+    h1 {
+        font-size: 1.5rem;
+
+        color: $text;
+
+        margin: 30px 0;
+    }
+
+    .slider {
+        width: 100%;
+        
+        @include flex(column);
+    }
+
+    .scroller{
+        width:100%;
+        height: 13px;
+        border-radius: 10px;
+
+        appearance: none;
+        background: $toggleBackground;
+        background-image: linear-gradient($barColour, $barColour);
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+       &::-webkit-slider-thumb  {
+
+        box-shadow: 1px 10px 20px $barColour;
+
+        width: 45px;
+        height: 45px;
+
+        background: $scrollerColour;
+        background-image: url(../images/icon-slider.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+
+        border-radius: 50%;
+
+
+        -webkit-appearance: none;
+        appearance: none;
+       }
+
+       &::-webkit-slider-thumb:hover {
+        background-color: hsl(174, 77%, 70%);
+
+        cursor: pointer;
+       }
+
+       &::-webkit-slider-thumb:active {
+        cursor: grab;
+       }       
+    }
+}
+
+
+    .price {
+        font-size: 2.4rem;
+        color: black;
+        @include flex(row);
+
+        gap: 8px;
+
+        p {
+            font-size: 1rem;
+            color: $text;
+        }
+    }
+
+
+.bill-section {
+
+    @include flex(row);
+
+    .monthly-billing{
+        @include flex(row);
+        gap: 10px;
+
+        p {
+            font-size: 10px;
+            color: $text;
+        }
+
+        .bar {
+            position: relative;
+
+            width: 45px;
+            height: 24px;
+
+            border-radius: 15px;
+
+            padding: 2px 3px;
+
+            margin-right: 5px;
+
+            background: $toggleBackground;
+        }
+
+        .bar:hover {
+            background-color: $scrollerColour;
+        }
+
+        .ball {
+            position: absolute;
+            left: 2px;
+
+            width: 20px;
+            height: 20px;
+
+            border-radius: 50%;
+
+
+            background: $pricingComponentBackground;
+        }
+        .toggleBallPosition {
+            position: absolute;
+            left: 23px;
+        }
+
+        .background {
+            background-color: $scrollerColour;
+        }
+
+    }
+
+        .yearly-billing {
+
+            @include flex(row);
+            p {
+                font-size: 10px;
+                color: $text;
+            }
+
+        }
+
+        .percentage {
+            background: $discountBackground;
+
+            text-align: center;
+
+            @include flex(column);
+
+            padding: 3px;
+
+            width: 80px;
+            height: 20px;
+
+            margin-left: 5px;
+
+
+            border-radius: 30px;
+            p {
+                color: $discountText;
+                font-size: 10px; 
+            }
+        }
+}
+
+.bottom-section {
+
+    @include flex(column);
+
+    box-shadow: 4px 10px 10px $toggleBackground;
+
+    margin-top: 2px;
+    padding: 30px;
+
+    width: 100%;
+
+    background: $pricingComponentBackground;
+
+    .extra-info {
+        @include flex(row);
+        margin-bottom: 10px;
+
+        p {
+            color: $text;
+        }
+    }
+
+    .submit-btn {
+        width: 75%;
+        padding: 15px;
+
+        color: $ctaText;
+        background: $buttonColour;
+
+        border-radius: 25px;
+        border: none;
+        outline: none;
+
+        margin-top: 20px;
+
+        cursor: pointer;
+    }
+}
+
+.attribution {
+    text-align: center;
+
+    color: $text;
+
+    font-size: 1.3rem;
+
+    margin-top: 40px;
+
+    a:link {
+        text-decoration: none;
+    }
+
+}
+
+@import "desktop-design";

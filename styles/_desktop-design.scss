@@ -1,0 +1,90 @@
+@media (min-width: 768px) {
+    .main-container {
+        width: 100%;
+    }
+
+    .price-section {
+        width: 480px;
+        height: 250px;
+
+        padding: 15px;
+
+        position: relative;
+        
+        .scroller {
+            margin-top: 70px;
+            margin-bottom: 30px;
+        }
+        .views {
+            position: absolute;
+            left: 20px;
+            top: -10px;
+
+            margin-bottom: 70px;
+        }
+        span {
+            position: absolute;
+            top: -20px;
+            right: 20px;
+        }
+
+        .bill-section {
+
+            gap: 10px;
+            margin-top: 10px;
+            margin-right: -40px;
+        }
+
+        .monthly-billing {
+            p {
+                font-size: 0.69rem;
+                border: 1px soild red;
+            }
+        }
+        .yearly-billing {
+            p {
+                font-size: 0.69rem;
+            }
+        }
+    
+        .percentage {
+            p {
+                font-size: 0.69rem;
+            }
+        }
+        .discount {
+            @include flex(row);
+
+            padding: 8px;
+
+            width: 95px;
+            height: 10px;
+        }
+    }
+
+    .bottom-section {
+        width: 480px;
+        @include spaceBetween;
+
+        gap: 40px;
+        
+        .submit-btn {
+            width: 45%;
+        }
+    }
+
+
+    .information {
+        @include flex(column);
+        align-items: flex-start;
+
+        .extra-info {
+            text-align: left;
+
+            display: flex;
+            flex-direction: row;
+
+            gap: 10px;
+        }
+    }
+}

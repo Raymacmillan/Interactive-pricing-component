@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Interactive pricing component</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="top-part">
+    <hgroup>
+      <h1> Simple, traffic-based pricing</h1>
+      <h3>Sign-up for our 30-day trial. No credit card required. </h3>
+    </hgroup>
+  </div>
+
+  <div class="price-section">
+    <h1 class="views">100K PAGEVIEWS</h1>
+    <div class="slider">
+      <input type="range" min="0" max="100" value="60" step="20" class="scroller" >
+      <span><h1 class="price">$16.00</h1><p class="month">/month</p></span>
+    </div>
+    <div class="bill-section">
+      <div class="monthly-billing">
+      <p class="monthly">Monthly Billing</p>
+      <div class="bar">
+        <div class="ball"></div>
+      </div>
+    </div>
+    <div class="yearly-billing">
+      <p>Yearly Billing</p>
+      <div class="percentage">
+        <p class="discount">-25%</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="bottom-section">
+    <div class="information">
+    <div class="extra-info">
+      <img src="./images/icon-check.svg" alt="check">
+      <p>Unlimited websites</p>
+    </div>
+    <div class="extra-info">
+      <img src="./images/icon-check.svg" alt="check">
+      <p>100% data ownership</p>
+    </div>
+    <div class="extra-info">
+      <img src="./images/icon-check.svg" alt="check">
+      <p>Email reports</p>
+    </div>
+    </div>
+    <button class="submit-btn">Start my trial</button>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Ray McMillan Gumbo</a>.
+  </div>
+  </div>
+  
+  <script src="./main/main.js"></script>
+</body>
+</html>
