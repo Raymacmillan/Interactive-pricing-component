@@ -253,30 +253,33 @@ body {
   .price-section .views {
     position: absolute;
     left: 20px;
-    top: -10px;
-    margin-bottom: 70px;
+    top: 0;
+    margin-bottom: 80px;
   }
   .price-section span {
     position: absolute;
-    top: -20px;
+    top: -5px;
     right: 20px;
   }
-  .price-section .bill-section {
+  .price-section span h1 {
+    font-size: 2.1rem;
+    color: black;
+  }
+  .bill-section {
     gap: 10px;
     margin-top: 10px;
     margin-right: -40px;
   }
-  .price-section .monthly-billing p {
-    font-size: 0.69rem;
-    border: 1px soild red;
-  }
-  .price-section .yearly-billing p {
+  .monthly-billing p {
     font-size: 0.69rem;
   }
-  .price-section .percentage p {
+  .yearly-billing p {
     font-size: 0.69rem;
   }
-  .price-section .discount {
+  .percentage p {
+    font-size: 0.69rem;
+  }
+  .discount {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -285,28 +288,29 @@ body {
     width: 95px;
     height: 10px;
   }
-  .bottom-section {
-    width: 480px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-  }
-  .bottom-section .submit-btn {
-    width: 45%;
-  }
-  .information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .information .extra-info {
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
+}
+.bottom-section {
+  width: 480px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.bottom-section .submit-btn {
+  width: 45%;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+}
+.information .extra-info {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }/*# sourceMappingURL=main.css.map */

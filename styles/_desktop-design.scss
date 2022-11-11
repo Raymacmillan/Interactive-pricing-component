@@ -18,14 +18,20 @@
         .views {
             position: absolute;
             left: 20px;
-            top: -10px;
+            top: 0;
 
-            margin-bottom: 70px;
+            margin-bottom: 80px;
         }
         span {
             position: absolute;
-            top: -20px;
+            top: -5px;
             right: 20px;
+            
+            h1 {
+                font-size: 2.1rem;
+                color: black;
+            }
+        }
         }
 
         .bill-section {
@@ -38,7 +44,6 @@
         .monthly-billing {
             p {
                 font-size: 0.69rem;
-                border: 1px soild red;
             }
         }
         .yearly-billing {
@@ -87,4 +92,3 @@
             gap: 10px;
         }
     }
-}
