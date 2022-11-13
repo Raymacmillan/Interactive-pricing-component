@@ -13,13 +13,17 @@ body {
     font-family:'Manrope', sans-serif;
     background-image: url(../images/bg-pattern.svg);
     background-repeat: no-repeat;
+
+    @include flex(column);
 }
 
 // mobile version...Mobile:375px
 
+
 .main-container {
 
     min-height: 100vh;
+    width: 100%;
 
     @include flex(column);
 
@@ -129,20 +133,20 @@ body {
        }       
     }
 }
+.price {
+    font-size: 2.4rem;
+    color: black;
+    @include flex(row);
 
+    gap: 8px;
 
-    .price {
-        font-size: 2.4rem;
-        color: black;
-        @include flex(row);
-
-        gap: 8px;
-
-        p {
-            font-size: 1rem;
-            color: $text;
-        }
+    p {
+        font-size: 1rem;
+        color: $text;
     }
+}
+
+
 
 
 .bill-section {
@@ -244,19 +248,36 @@ body {
 
     width: 100%;
 
+
     background: $pricingComponentBackground;
 
-    .extra-info {
-        @include flex(row);
-        margin-bottom: 10px;
+    .information {
+        @include flex(column);
+        align-items: flex-start;
 
-        p {
-            color: $text;
+        .extra-info {
+            text-align: left;
+
+            display: flex;
+            flex-direction: row;
+
+            gap: 10px;
+
+            p {
+                color: $text;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 
+
     .submit-btn {
-        width: 75%;
+        border: 4px solid red;
+        width: 45%;
         padding: 15px;
 
         color: $ctaText;
@@ -287,4 +308,7 @@ body {
 
 }
 
-@import "desktop-design";
+
+@media (min-width:768px) {
+    @import "desktop-design";
+}

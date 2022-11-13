@@ -9,10 +9,15 @@ body {
   font-family: "Manrope", sans-serif;
   background-image: url(../images/bg-pattern.svg);
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .main-container {
   min-height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,18 +209,29 @@ body {
   width: 100%;
   background: white;
 }
-.bottom-section .extra-info {
+.bottom-section .information {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  align-items: flex-start;
 }
-.bottom-section .extra-info p {
+.bottom-section .information .extra-info {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.bottom-section .information .extra-info p {
   color: hsl(225deg, 20%, 60%);
 }
+.bottom-section .information .extra-info img {
+  width: 20px;
+  height: 20px;
+}
 .bottom-section .submit-btn {
-  width: 75%;
+  border: 4px solid red;
+  width: 45%;
   padding: 15px;
   color: hsl(226deg, 100%, 87%);
   background: hsl(227deg, 35%, 25%);
@@ -236,7 +252,7 @@ body {
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (min-width: 768px) {
   .main-container {
     width: 100%;
   }
@@ -289,28 +305,31 @@ body {
     height: 10px;
   }
 }
-.bottom-section {
-  width: 480px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+@media (min-width: 768px) {
+  .bottom-section {
+    width: 480px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .bottom-section .submit-btn {
+    width: 45%;
+  }
 }
-.bottom-section .submit-btn {
-  width: 45%;
-}
-
-.information {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-items: flex-start;
-}
-.information .extra-info {
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+@media (min-width: 768px) {
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .information .extra-info {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */
