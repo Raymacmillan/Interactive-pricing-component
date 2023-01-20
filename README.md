@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Raymacmillan/Interactive-pricing-component](https://github.com/Raymacmillan/Interactive-pricing-component)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://raymacmillan.github.io/Interactive-pricing-component/](https://raymacmillan.github.io/Interactive-pricing-component/)
 
 ## My process
 
